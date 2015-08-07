@@ -1,0 +1,18 @@
+//
+//  Prefix.pch
+//  Ikigai
+//
+//  Created by Priscilla Guo on 7/8/15.
+//  Copyright (c) 2015 Team Ikigai. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_4
+#warning "This project uses features only available in iOS SDK 8.4 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif

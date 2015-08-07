@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Quicksand-Regular.otf">
+            <string>Quicksand-Regular</string>
+            <string>Quicksand-Regular</string>
+            <string>Quicksand-Regular</string>
+            <string>Quicksand-Regular</string>
+            <string>Quicksand-Regular</string>
+            <string>Quicksand-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedCellViewController">
+            <connections>
+                <outlet property="date" destination="V4h-AO-cY4" id="aCA-nD-l2Q"/>
+                <outlet property="delete" destination="Gp7-nl-Oou" id="pHU-wv-mG0"/>
+                <outlet property="location" destination="E6C-7X-GIF" id="sBv-zf-SEf"/>
+                <outlet property="name" destination="0fj-Tv-oCd" id="pzI-fK-Jhg"/>
+                <outlet property="playerNumberOfViews" destination="ar7-cW-GON" id="Mgh-Xo-sH4"/>
+                <outlet property="playerTitle" destination="5IL-iA-kdj" id="cfa-fK-0Cd"/>
+                <outlet property="playerView" destination="pmr-TB-tbL" id="P5r-zo-Ogp"/>
+                <outlet property="profilePicture" destination="Hok-3J-Jlm" id="x2c-DH-Ici"/>
+                <outlet property="separator" destination="t2i-SA-RLv" id="y4d-Ca-BQT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="-1" width="375" height="392"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmr-TB-tbL">
+                    <rect key="frame" x="20" y="97" width="335" height="251.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Views" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar7-cW-GON">
+                    <rect key="frame" x="275" y="356" width="80" height="15.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="5QL-hz-7t0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="13"/>
+                    <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IL-iA-kdj">
+                    <rect key="frame" x="20" y="68" width="335" height="21"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LIE-Ql-zoW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4h-AO-cY4">
+                    <rect key="frame" x="68" y="43" width="31.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                    <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6C-7X-GIF">
+                    <rect key="frame" x="111.5" y="43" width="60.5" height="16.5"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="SzE-jh-VYK" appends="YES" id="sVI-pv-Jxz"/>
+                    </connections>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp7-nl-Oou">
+                    <rect key="frame" x="20" y="348.5" width="48" height="30"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" red="1" green="0.1100805916" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteButton:" destination="-1" eventType="touchUpInside" id="SCh-dm-nNc"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_user.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-3J-Jlm">
+                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0jP-v0-cZ1"/>
+                        <constraint firstAttribute="width" constant="40" id="h4B-Sk-nMS"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="8p1-ld-nWg" appends="YES" id="cOp-Hz-PCf"/>
+                    </connections>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fj-Tv-oCd">
+                    <rect key="frame" x="68" y="20" width="59" height="23.5"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="20"/>
+                    <color key="textColor" red="0.87892597849999998" green="0.0" blue="0.0088345419689999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="nSk-Lf-hY4" appends="YES" id="L2w-Dz-QxF"/>
+                    </connections>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2i-SA-RLv">
+                    <rect key="frame" x="102.5" y="43" width="6" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="8ZW-nI-ESM"/>
+                        <constraint firstAttribute="width" constant="6" id="itr-mL-lV3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0fj-Tv-oCd" firstAttribute="top" secondItem="Hok-3J-Jlm" secondAttribute="top" id="28Z-5h-9iQ"/>
+                <constraint firstItem="ar7-cW-GON" firstAttribute="top" secondItem="pmr-TB-tbL" secondAttribute="bottom" constant="8" symbolic="YES" id="5KA-6V-qlq"/>
+                <constraint firstAttribute="trailing" secondItem="ar7-cW-GON" secondAttribute="trailing" constant="20" symbolic="YES" id="AcB-N8-SZJ"/>
+                <constraint firstItem="E6C-7X-GIF" firstAttribute="leading" secondItem="t2i-SA-RLv" secondAttribute="trailing" constant="3" id="AtA-TE-ebF"/>
+                <constraint firstItem="V4h-AO-cY4" firstAttribute="baseline" secondItem="E6C-7X-GIF" secondAttribute="baseline" id="Av1-9J-0bQ"/>
+                <constraint firstItem="pmr-TB-tbL" firstAttribute="top" secondItem="5IL-iA-kdj" secondAttribute="bottom" constant="8" symbolic="YES" id="Byd-Gt-TF6"/>
+                <constraint firstItem="Gp7-nl-Oou" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="J6C-DV-Heu"/>
+                <constraint firstItem="ar7-cW-GON" firstAttribute="baseline" secondItem="Gp7-nl-Oou" secondAttribute="baseline" id="Kfj-12-VDm"/>
+                <constraint firstAttribute="trailing" secondItem="5IL-iA-kdj" secondAttribute="trailing" constant="20" symbolic="YES" id="LeX-fA-UQw"/>
+                <constraint firstAttribute="trailing" secondItem="pmr-TB-tbL" secondAttribute="trailing" constant="20" symbolic="YES" id="TXE-Jy-aNv"/>
+                <constraint firstAttribute="bottom" secondItem="ar7-cW-GON" secondAttribute="bottom" constant="20" symbolic="YES" id="UrL-pm-W26"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="E6C-7X-GIF" secondAttribute="trailing" constant="20" symbolic="YES" id="VeE-63-2ay"/>
+                <constraint firstItem="Hok-3J-Jlm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="XU7-Kx-B1m"/>
+                <constraint firstItem="0fj-Tv-oCd" firstAttribute="leading" secondItem="Hok-3J-Jlm" secondAttribute="trailing" constant="8" symbolic="YES" id="XvW-LW-yo7"/>
+                <constraint firstItem="V4h-AO-cY4" firstAttribute="leading" secondItem="Hok-3J-Jlm" secondAttribute="trailing" constant="8" symbolic="YES" id="ZmI-HC-sBt"/>
+                <constraint firstItem="Hok-3J-Jlm" firstAttribute="bottom" secondItem="V4h-AO-cY4" secondAttribute="bottom" id="aEi-6n-D0v"/>
+                <constraint firstItem="5IL-iA-kdj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="ame-fd-ThZ"/>
+                <constraint firstItem="t2i-SA-RLv" firstAttribute="baseline" secondItem="V4h-AO-cY4" secondAttribute="baseline" id="at7-60-O6d"/>
+                <constraint firstItem="5IL-iA-kdj" firstAttribute="top" secondItem="Hok-3J-Jlm" secondAttribute="bottom" constant="8" symbolic="YES" id="gXB-aV-5E9"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0fj-Tv-oCd" secondAttribute="trailing" constant="20" symbolic="YES" id="n61-qx-pac"/>
+                <constraint firstItem="Hok-3J-Jlm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="p9W-zb-aJW"/>
+                <constraint firstItem="t2i-SA-RLv" firstAttribute="leading" secondItem="V4h-AO-cY4" secondAttribute="trailing" constant="3" id="ppw-NR-HsC"/>
+                <constraint firstItem="pmr-TB-tbL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="vqj-eO-X63"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="655.5" y="584"/>
+        </view>
+        <tapGestureRecognizer id="8p1-ld-nWg">
+            <connections>
+                <action selector="showProfile:" destination="-1" id="bbz-zj-Ykh"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="nSk-Lf-hY4">
+            <connections>
+                <action selector="showProfile:" destination="-1" id="U7N-K3-OMv"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="SzE-jh-VYK">
+            <connections>
+                <action selector="showLocation:" destination="-1" id="lTA-5Y-JJ4"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="default_user.jpg" width="750" height="750"/>
+    </resources>
+</document>
